@@ -1,10 +1,10 @@
-#pragma once
+﻿#pragma once
 
 #include "CRGameInstance.h"
 
 CRGameInstance::CRGameInstance()
 {
-	Title = L"CR3SH";
+	Title = L"CR☰SH";
 }
 
 void CRGameInstance::PreTick()
