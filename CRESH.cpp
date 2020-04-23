@@ -1,11 +1,13 @@
-#include "ShitRPG\ShitRPG.h"
-#include "TextEngine\Rendering\Renderer.h"
-#include "TextEngine\Rendering\RenderResources\RenderResource.h"
+#pragma once
+
+#include "CRESH.h"
+#include "Rendering\Renderer.h"
+#include "Rendering\RenderResources\RenderResource.h"
 
 int main()
 {
-	CShitRPG_GameInstance* gameInstance = new CShitRPG_GameInstance();
-	engine = new CEngine(/*gameInstance*/);
+	CCresh_GameInstance* gameInstance = new CCresh_GameInstance();
+	engine = new CEngine(gameInstance);
 	const int result = engine->Main();
 	delete engine;
 	delete gameInstance;
@@ -23,7 +25,7 @@ CRenderResourceText* testText4 = nullptr;
 CRenderResourceText* testText5 = nullptr;
 
 static bool ahShit = false;
-void CShitRPG_GameInstance::PreTick()
+void CCresh_GameInstance::PreTick()
 {
 	if (ahShit == false)
 	{
@@ -54,7 +56,7 @@ void CShitRPG_GameInstance::PreTick()
 }
 
 static int bla = 0;
-void CShitRPG_GameInstance::Tick(float deltaTime)
+void CCresh_GameInstance::Tick(float deltaTime)
 {
 	testImage->SetLocation(std::min<float>(testImage->GetX() + (13.f * deltaTime), 3.f), testImage->GetY());
 	testText->SetLocation(std::min<float>(testText->GetX() + (14.f * deltaTime), 8.f), testText->GetY());
@@ -76,7 +78,7 @@ void CShitRPG_GameInstance::Tick(float deltaTime)
 	//}
 }
 
-void CShitRPG_GameInstance::PostTick()
+void CCresh_GameInstance::PostTick()
 {
 
 }
