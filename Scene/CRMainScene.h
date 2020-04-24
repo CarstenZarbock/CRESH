@@ -13,4 +13,5 @@ public:
 	virtual void Tick(const float deltaTime) override;
 
 protected:
+	class CRPlayerController* PlayerController = nullptr;
 };
