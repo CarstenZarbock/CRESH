@@ -26,4 +26,7 @@
       <UniqueIdentifier>{cfce1455-827a-486e-9cfd-1de62a653d75}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="TODO.md" />
+  </ItemGroup>
 </Project>
