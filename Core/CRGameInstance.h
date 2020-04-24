@@ -7,10 +7,7 @@ class CRGameInstance : public KGameInstance
 
 public:
 	CRGameInstance::CRGameInstance();
-
-	virtual void PreTick() override;
-	virtual void Tick(float deltaTime) override;
-	virtual void PostTick() override;
+	virtual void InitializeDefaultScene(class KEngine* engine) override;
 
 protected:
 };

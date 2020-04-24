@@ -162,10 +162,12 @@
   <ItemGroup>
     <ClCompile Include="Core\CRGameInstance.cpp" />
     <ClCompile Include="CRESH.cpp" />
+    <ClCompile Include="Scene\CRMainScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\CRGameInstance.h" />
     <ClInclude Include="CRESH.h" />
+    <ClInclude Include="Scene\CRMainScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,8 @@
 ﻿#pragma once
 
+#include "Engine.h"
+#include "..\Scene\CRMainScene.h"
+
 #include "CRGameInstance.h"
 
 CRGameInstance::CRGameInstance()
@@ -7,17 +10,8 @@ CRGameInstance::CRGameInstance()
 	Title = L"CR☰SH";
 }
 
-void CRGameInstance::PreTick()
+void CRGameInstance::InitializeDefaultScene(KEngine* engine)
 {
-
-}
-
-void CRGameInstance::Tick(float deltaTime)
-{
-
-}
-
-void CRGameInstance::PostTick()
-{
-
+	Scene = new CRMainScene(engine);
+	Scene->Load();
 }
