@@ -5,16 +5,46 @@
     <ClCompile Include="Core\CRGameInstance.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="Scene\CRMainScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\CRPlayerController.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\CRInterface.cpp">
+      <Filter>Interface</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CRESH.h" />
     <ClInclude Include="Core\CRGameInstance.h">
       <Filter>Core</Filter>
     </ClInclude>
+    <ClInclude Include="Scene\CRMainScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\CRPlayerController.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\CRInterface.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Core">
       <UniqueIdentifier>{c494fa11-d3f7-4b23-92aa-5ea55194b047}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{cfce1455-827a-486e-9cfd-1de62a653d75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{db5b3089-e4c9-4b3e-a772-fd602d2bc376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{8e5b8340-963b-4f1c-921b-48822a84f705}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TODO.md" />
   </ItemGroup>
 </Project>

@@ -162,10 +162,19 @@
   <ItemGroup>
     <ClCompile Include="Core\CRGameInstance.cpp" />
     <ClCompile Include="CRESH.cpp" />
+    <ClCompile Include="Interface\CRInterface.cpp" />
+    <ClCompile Include="Player\CRPlayerController.cpp" />
+    <ClCompile Include="Scene\CRMainScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\CRGameInstance.h" />
     <ClInclude Include="CRESH.h" />
+    <ClInclude Include="Interface\CRInterface.h" />
+    <ClInclude Include="Player\CRPlayerController.h" />
+    <ClInclude Include="Scene\CRMainScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TODO.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

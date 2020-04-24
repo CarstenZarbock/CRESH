@@ -9,6 +9,8 @@ int main()
 	GameInstance = new CRGameInstance();
 	Engine = new KEngine(GameInstance);
 	
+	Engine->PreInitialize();
+
 	const int result = Engine->Main();
 
 	delete Engine;
