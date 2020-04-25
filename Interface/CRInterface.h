@@ -15,12 +15,17 @@ public:
 
 	virtual void Initialize() override;
 	virtual void Tick(const float deltaTime) override;
+	virtual void OnDestroy() override;
 
 protected:
 	void SwitchMenu(int index);
+	void UpdateBlink();
 
 	int CurrentMenuIndex = -1;
 	float ButtonTimeOut = 0;
+	float BlinkTime = 0;
+	bool bIsBlinkVisible = false;
+
 	class KRenderResourceText* Text_StartGame = nullptr;
 	class KRenderResourceText* Text_ContinueGame = nullptr;
 	class KRenderResourceText* Text_Options = nullptr;

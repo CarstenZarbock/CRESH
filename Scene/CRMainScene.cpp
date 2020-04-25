@@ -23,7 +23,6 @@ void CRMainScene::Load()
 
 	PlayerController = new CRPlayerController(Engine, this);
 	PlayerController->Initialize();
-	NewObject(PlayerController);
 }
 
 void CRMainScene::Tick(float deltaTime)

@@ -24,6 +24,7 @@ void CRPlayerController::OnDestroy()
 {
 	if (Interface != nullptr)
 	{
+		Interface->OnDestroy();
 		delete Interface;
 	}
 	Interface = nullptr;
