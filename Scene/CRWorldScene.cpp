@@ -4,20 +4,19 @@
 #include "Rendering\RenderResources\RenderResource.h"
 #include "Objects\GameObject.h"
 #include "..\Player\CRPlayerController.h"
+#include "CRWorldScene.h"
 
-#include "CRMainScene.h"
-
-CRMainScene::CRMainScene()
+CRWorldScene::CRWorldScene()
 {
-	CRMainScene(nullptr);
+	CRWorldScene(nullptr);
 }
 
-CRMainScene::CRMainScene(KEngine* engine)
+CRWorldScene::CRWorldScene(KEngine* engine)
 {
 	Engine = engine;
 }
 
-void CRMainScene::Load()
+void CRWorldScene::Load()
 {
 	KScene::Load();
 
@@ -25,7 +24,7 @@ void CRMainScene::Load()
 	PlayerController->Initialize();
 }
 
-void CRMainScene::Tick(float deltaTime)
+void CRWorldScene::Tick(float deltaTime)
 {
 	KScene::Tick(deltaTime);
 }

@@ -16,26 +16,4 @@ public:
 	virtual void Initialize() override;
 	virtual void Tick(const float deltaTime) override;
 	virtual void OnDestroy() override;
-
-protected:
-	void SwitchMenu(int index);
-	void UpdateBlink();
-
-	int CurrentMenuIndex = -1;
-	float ButtonTimeOut = 0;
-	float BlinkTime = 0;
-	bool bIsBlinkVisible = false;
-
-	class KRenderResourceText* Text_StartGame = nullptr;
-	class KRenderResourceText* Text_ContinueGame = nullptr;
-	class KRenderResourceText* Text_Options = nullptr;
-	class KRenderResourceText* Text_Exit = nullptr;
-
-	class KRenderResourceText* Text_GameName = nullptr;
-	class KRenderResourceText* Text_Copyright = nullptr;
-
-	class KRenderResourceImage* Background = nullptr;
-	class KRenderResourceImage* Girl1 = nullptr;
-	class KRenderResourceImage* Girl2 = nullptr;
-	class KRenderResourceImage* Logo = nullptr;
 };

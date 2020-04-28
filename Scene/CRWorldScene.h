@@ -3,11 +3,11 @@
 #include "stdafx.h"
 #include "Scene\Scene.h"
 
-class CRMainScene : public KScene
+class CRWorldScene : public KScene
 {
 public:
-	CRMainScene::CRMainScene();
-	CRMainScene::CRMainScene(class KEngine* engine);
+	CRWorldScene::CRWorldScene();
+	CRWorldScene::CRWorldScene(class KEngine* engine);
 
 	virtual void Load() override;
 	virtual void Tick(const float deltaTime) override;

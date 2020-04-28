@@ -163,15 +163,35 @@
     <ClCompile Include="Core\CRGameInstance.cpp" />
     <ClCompile Include="CRESH.cpp" />
     <ClCompile Include="Interface\CRInterface.cpp" />
+    <ClCompile Include="Interface\CRIntroSceneInterface.cpp" />
+    <ClCompile Include="Interface\CRLoadingScreenInterface.cpp" />
+    <ClCompile Include="Interface\CRMainMenuInterface.cpp" />
+    <ClCompile Include="Interface\CRWorldSceneInterface.cpp" />
+    <ClCompile Include="Player\CRIntroScenePlayerController.cpp" />
+    <ClCompile Include="Player\CRLoadingScenePlayerController.cpp" />
+    <ClCompile Include="Player\CRMainMenuPlayerController.cpp" />
     <ClCompile Include="Player\CRPlayerController.cpp" />
-    <ClCompile Include="Scene\CRMainScene.cpp" />
+    <ClCompile Include="Scene\CRIntroScene.cpp" />
+    <ClCompile Include="Scene\CRLoadingScene.cpp" />
+    <ClCompile Include="Scene\CRMainMenuScene.cpp" />
+    <ClCompile Include="Scene\CRWorldScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\CRGameInstance.h" />
     <ClInclude Include="CRESH.h" />
     <ClInclude Include="Interface\CRInterface.h" />
+    <ClInclude Include="Interface\CRIntroSceneInterface.h" />
+    <ClInclude Include="Interface\CRLoadingScreenInterface.h" />
+    <ClInclude Include="Interface\CRMainMenuInterface.h" />
+    <ClInclude Include="Interface\CRWorldSceneInterface.h" />
+    <ClInclude Include="Player\CRIntroScenePlayerController.h" />
+    <ClInclude Include="Player\CRLoadingScenePlayerController.h" />
+    <ClInclude Include="Player\CRMainMenuPlayerController.h" />
     <ClInclude Include="Player\CRPlayerController.h" />
-    <ClInclude Include="Scene\CRMainScene.h" />
+    <ClInclude Include="Scene\CRIntroScene.h" />
+    <ClInclude Include="Scene\CRLoadingScene.h" />
+    <ClInclude Include="Scene\CRMainMenuScene.h" />
+    <ClInclude Include="Scene\CRWorldScene.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TODO.md" />

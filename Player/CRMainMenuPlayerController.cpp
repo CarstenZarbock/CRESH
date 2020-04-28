@@ -1,18 +1,18 @@
 #pragma once
 
 #include "Engine.h"
-#include "..\Interface\CRWorldSceneInterface.h"
+#include "..\Interface\CRMainMenuInterface.h"
 #include "Scene\Scene.h"
-#include "CRPlayerController.h"
+#include "CRMainMenuPlayerController.h"
 
-void CRPlayerController::Initialize()
+void CRMainMenuPlayerController::Initialize()
 {
-	Interface = new CRWorldSceneInterface(Engine);
+	Interface = new CRMainMenuInterface(Engine);
 	Interface->Initialize();
 	Scene->NewObject(this);
 }
 
-void CRPlayerController::Tick(const float deltaTime)
+void CRMainMenuPlayerController::Tick(const float deltaTime)
 {
 	if (Interface != nullptr)
 	{
@@ -20,7 +20,7 @@ void CRPlayerController::Tick(const float deltaTime)
 	}
 }
 
-void CRPlayerController::OnDestroy()
+void CRMainMenuPlayerController::OnDestroy()
 {
 	if (Interface != nullptr)
 	{

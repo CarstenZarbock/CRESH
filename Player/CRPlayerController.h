@@ -19,5 +19,5 @@ public:
 	virtual void Tick(const float deltaTime) override;
 
 protected:
-	class CRInterface* Interface = nullptr;
+	class CRWorldSceneInterface* Interface = nullptr;
 };
