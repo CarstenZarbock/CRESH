@@ -16,6 +16,7 @@ public:
 
 	virtual void Initialize() override;
 	virtual void Tick(const float deltaTime) override;
+	virtual void OnDestroy() override;
 
 protected:
 	class CRIntroSceneInterface* Interface = nullptr;

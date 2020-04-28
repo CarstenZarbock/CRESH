@@ -19,4 +19,6 @@ public:
 
 protected:
 	class KRenderResourceText* Text_StartGame = nullptr;
+	class KRenderResourceText* Text_StartGame2 = nullptr;
+	class KRenderResourceText* Text_StartGame3 = nullptr;
 };

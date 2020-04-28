@@ -14,7 +14,7 @@
 #define BUTTON_EXIT_LABEL "Exit"
 
 #define TEXT_GAMENAME_LABEL "CR=SH: Cerebellum"
-#define TEXT_COPYRIGHT_LABEL "Copyright 1972 NeutrCopy Inc"
+#define TEXT_COPYRIGHT_LABEL "Copyright 1972 NeutrKopy Inc"
 
 #define TEXT_MSG1_NAME "@Devote1958"
 #define TEXT_MSG1_TIME "10 Min."
@@ -176,7 +176,7 @@ void CRMainMenuInterface::Tick(const float deltaTime)
 	if (BlinkTime <= 0.f)
 	{
 		bIsBlinkVisible = !bIsBlinkVisible;
-		BlinkTime += 1.f;
+		BlinkTime += 0.75f;
 		UpdateBlink();
 	}
 

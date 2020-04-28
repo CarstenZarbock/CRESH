@@ -18,5 +18,11 @@ public:
 	virtual void OnDestroy() override;
 
 protected:
+	void UpdateBlink();
+
 	class KRenderResourceText* Text_StartGame = nullptr;
+	float CurLoadingTime = 0.f;
+
+	float BlinkTime = 0;
+	bool bIsBlinkVisible = false;
 };

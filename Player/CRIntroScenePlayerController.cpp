@@ -20,3 +20,13 @@ void CRIntroScenePlayerController::Tick(const float deltaTime)
 		Interface->Tick(deltaTime);
 	}
 }
+
+void CRIntroScenePlayerController::OnDestroy()
+{
+	if (Interface != nullptr)
+	{
+		Interface->OnDestroy();
+		delete Interface;
+	}
+	Interface = nullptr;
+}

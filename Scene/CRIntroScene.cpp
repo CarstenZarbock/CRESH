@@ -31,7 +31,7 @@ void CRIntroScene::Tick(float deltaTime)
 	KScene::Tick(deltaTime);
 
 	CurLoadingTime += 1.f * deltaTime;
-	if (CurLoadingTime >= 5.f)
+	if (CurLoadingTime >= 40.f)
 	{
 		Engine->GetGameInstance().SwitchScene(*new CRWorldScene(Engine));
 	}
